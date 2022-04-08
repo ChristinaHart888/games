@@ -23,3 +23,7 @@ body {
     box-shadow: 5px 10px 10px;
 }
 
+#num_of_players {
+    box-sizing: border-box;
+    height: 100px;
+}
