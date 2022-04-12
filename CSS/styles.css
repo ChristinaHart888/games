@@ -1,0 +1,63 @@
+:root{
+    --time_button_color: hsl(#000000, 50%, 50%);
+}
+
+body {
+    background-color: pink;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: aliceblue;
+    padding: 10px;
+    display: flex;
+}
+
+nav > a {
+    color: gray;
+    font-size: large;
+    font-weight: bold;
+    /* margin: 10px; */
+    text-decoration: none;
+    transition: 250ms ease-in-out;
+    padding: 10px;
+}
+
+nav > a:hover {
+    transform: translateY(-7px);
+}
+
+nav > a.current {
+    color: red;
+}
+
+.gameTitle {
+    font-size: 5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 2px 2px black;
+    color: white;
+}
+
+.start {
+    border: 2px solid purple;
+    border-radius: 20px;
+    background-color: lightblue;
+    width: 75vw;
+    height: 60vh;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 10;
+    margin-top: 55;
+    box-shadow: 5px 10px 10px;
+    padding: 10px;
+}
+
+.header {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+}

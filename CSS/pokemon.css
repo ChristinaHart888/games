@@ -1,0 +1,31 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#text {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#name::first-letter {
+    text-transform: capitalize;
+}
+
+.box {
+    background-color: grey;
+    width: 60vw;
+    height: 50vh;
+    opacity: 0.8;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+}
+

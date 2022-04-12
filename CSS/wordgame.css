@@ -1,0 +1,64 @@
+#num_of_players {
+    box-sizing: border-box;
+}
+
+label {
+    font-size: large;
+    font-weight: bold; 
+}
+
+input#num_of_players{
+    width: 100%;
+    height: 50px;
+    margin-left: 10px 0;
+    margin-top: 10;
+    margin-bottom: 10;
+    border-radius: 100px;
+    border: 1px solid white;
+}
+
+ul {
+    text-align: left;
+}
+
+#time_limit {
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+}
+div#time_limit {
+    list-style: none;
+}
+
+input.time {
+    /* Makes Radio buttons invisible */
+    visibility: hidden;
+}
+
+input.time:checked + label {
+    transition: 250ms ease-in-out;
+    background-color: lime;
+}
+
+label {
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+
+div.time {
+    background: none;
+    border-radius: 15px;
+    border: 3px solid var(--time_button_color);
+    margin: 10;
+    color: var(--time_button_color);
+    font-weight: bold;
+    font-size: large;
+    padding: 5px 15px;
+    transition: 250ms ease-in-out;
+}
+
+div.time:hover {
+    background-color: var(--time_button_color);
+    color: white;
+    transform: translateY(-5px);
+}

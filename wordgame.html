@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/wordgame.css">
     <title>Word Game</title>
     
 </head>
@@ -12,14 +13,20 @@
     <nav>
         <a href="index.html">Home</a>
         <a class="current" href="#">Word Game</a>
-        <a>Pokemon</a>
+        <a href="pokemon.html">Pokemon</a>
     </nav>
     <h1 class="gameTitle">Word Game</h1> 
     <div class="start">
         <form>
-            <label for="num_of_players" class="header">Number of Players</label>
+            <div class="header">
+                <label for="num_of_players" class="header">Number of Players</label>
+            </div>
+            
             <input type="number" id="num_of_players">
-            <label for="time_limt" class="header">Time Limit</label>
+            <div class="header">
+                <label for="time_limt" class="header">Time Limit</label>
+            </div>
+            
             <div id="time_limit">
                 <div class="time">
                     <input type="radio" name="time" class="time" id="10">

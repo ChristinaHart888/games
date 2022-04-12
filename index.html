@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <title>Home</title>
     
 </head>
@@ -12,47 +12,8 @@
     <nav>
         <a class="current" href="#">Home</a>
         <a href="wordgame.html">Word Game</a>
-        <a>Pokemon</a>
+        <a href="pokemon.html">Pokemon</a>
     </nav>
-    <h1 class="gameTitle">Word Game</h1> 
-    <div class="start">
-        <form>
-            <label for="num_of_players" class="header">Number of Players</label>
-            <input type="number" id="num_of_players">
-            <label for="time_limt" class="header">Time Limit</label>
-            <div id="time_limit">
-                <div class="time">
-                    <input type="radio" name="time" class="time" id="10">
-                    <label for="10">10sec</label> 
-                </div>
-                <div class="time">
-                   <input type="radio" name="time" class="time" id="15">
-                    <label for="15">15sec</label> 
-                </div>
-                <div class="time">
-                    <input type="radio" name="time" class="time" id="20">
-                <label for="20">20sec</label>
-                </div>
-                <div class="time">
-                   <input type="radio" name="time" class="time" id="25">
-                <label for="25">25sec</label> 
-                </div>
-                <div class="time">
-                    <input type="radio" name="time" class="time" id="30">
-                    <label for="30" class="name">30sec</label>
-                </div>
-            </div><!--End Time Limit-->
-            <p class="header">Rules:</p>
-            <ul>
-                <li>Each player takes turns to enter a word that starts with the letter of the last player's word's last letter.</li>
-                <li>Words are not to be repeated by any player during the game.</li>
-                <li>Each player has to enter a valid word within the time limit. Otherwise, they will lose a life.</li>
-                <li>A player is eliminated when they run out of lives.</li>
-                <li>The game ends when there only 1 player remaining.</li>
-            </ul>
-            <button type="submit">Start Game</button>
-        </form>
-        
-    </div>
+    <h1 class="gameTitle">Home</h1>
 </body>
 </html>
