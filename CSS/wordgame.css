@@ -25,6 +25,7 @@ ul {
     list-style-type: none;
     justify-content: space-around;
     display: flex;
+    overflow: auto;
 }
 div#time_limit {
     list-style: none;

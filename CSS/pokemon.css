@@ -9,6 +9,10 @@ body {
     font-weight: bold;
 }
 
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 #name::first-letter {
     text-transform: capitalize;
 }
@@ -26,6 +30,54 @@ body {
 
 .team {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    clear: both;
 }
 
+button {
+    background: none;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 4px solid yellow;
+    border-radius: 100px;
+    transition: 300ms ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+
+.button {
+    background: none;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: 4px solid lime;
+    border-radius: 100px;
+    transition: 300ms ease-in-out;
+}
+
+.button:hover {
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+
+.button_group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button_text {
+    text-decoration: none;
+    color: white;
+}
+
+.reset {
+    border-color: maroon;
+}
