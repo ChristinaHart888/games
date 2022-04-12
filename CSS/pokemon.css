@@ -2,6 +2,7 @@ body {
     background-image: url(https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png);
     background-repeat: no-repeat;
     background-size: auto;
+    transition: 250ms ease-in-out;
 }
 
 #text {
@@ -11,6 +12,8 @@ body {
 
 p {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aliceblue;
+    text-shadow: 1px 0px black;
 }
 
 #name::first-letter {
@@ -19,13 +22,14 @@ p {
 
 .box {
     background-color: grey;
+    
     width: 60vw;
     height: 50vh;
     opacity: 0.8;
     margin: auto;
     padding: 15px;
     border-radius: 20px;
-    box-shadow: 5px 5px 15px 5px;
+    box-shadow: 5px 5px 15px 5px black;
 }
 
 .team {
@@ -48,6 +52,8 @@ button {
 
 button:hover {
     transform: translateY(-7px);
+    background-color: yellow;
+    color: black;
     cursor: pointer;
 }
 
@@ -65,6 +71,7 @@ button:hover {
 
 .button:hover {
     transform: translateY(-7px);
+    background-color: lime;
     cursor: pointer;
 }
 
@@ -80,4 +87,15 @@ button:hover {
 
 .reset {
     border-color: maroon;
+}
+
+.reset:hover {
+    background-color: maroon;
+    color: aliceblue;
+}
+
+.team {
+    border-top: 1px solid black;
+    padding-top: 15px;
+    font-weight: bolder;
 }
