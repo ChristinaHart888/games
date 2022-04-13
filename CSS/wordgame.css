@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(2,0,36);
+    background-color: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(110,9,121,1) 100%, rgba(0,212,255,1) 100%);
+    
+}
+
 label {
     font-size: large;
     font-weight: bold; 
