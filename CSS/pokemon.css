@@ -1,6 +1,6 @@
 body {
     background-image: url(https://i.pinimg.com/originals/df/4e/8b/df4e8ba28f912bf9cdf9fa0dfc196411.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: auto;
     transition: 250ms ease-in-out;
 }
@@ -38,6 +38,19 @@ p {
     justify-content: center;
     clear: both;
 }
+
+.mon {
+    margin: 5px 1px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    /* transition: 100ms ease-in-out; */
+    /* animation-name: mon;
+    animation-duration: 2s; */
+}
+
+/* .mon:hover {
+    transform: rotateY(180deg);
+} */
 
 button {
     background: none;
@@ -100,3 +113,11 @@ button:hover {
     padding-top: 15px;
     font-weight: bolder;
 }
+
+/* @keyframes mon {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+} */

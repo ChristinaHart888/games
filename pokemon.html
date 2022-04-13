@@ -22,34 +22,34 @@
         <p>Use this tool to generate random teams for your pokemon showdown battles!</p>
         <p>No 2 matches are the same when you use this tool, allowing for constant fun in teambuilding and battling.</p>
         <div class="team">
-            <div class="mon1">
+            <div class="mon">
                 <div class="name1" id="name"></div>
                 <div class="sprite1"></div>
             </div>
-            <div class="mon2">
+            <div class="mon">
                 <div class="name2" id="name"></div>
                 <div class="sprite2"></div>
             </div>
-            <div class="mon3">
+            <div class="mon">
                 <div class="name3" id="name"></div>
                 <div class="sprite3"></div>
             </div>
-            <div class="mon4">
+            <div class="mon">
                 <div class="name4" id="name"></div>
                 <div class="sprite4"></div>
             </div>
-            <div class="mon5">
+            <div class="mon">
                 <div class="name5" id="name"></div>
                 <div class="sprite5"></div>
             </div>
-            <div class="mon6">
+            <div class="mon">
                 <div class="name6" id="name"></div>
                 <div class="sprite6"></div>
             </div>
         </div><!--End Team-->
         <div class="button_group">
             <div class="button">
-                <a href="https://play.pokemonshowdown.com/teambuilder" target="_blank" class="button_text" onclick="importTeam()">Showdown!</a>
+                <a href="https://play.pokemonshowdown.com/teambuilder" target="_blank" class="button_text" onclick="copyTeam()">Showdown!</a>
             </div>
             <button onclick="importTeam()">Copy</button>
             <button onclick="reload()" class="reset">Reset</button>
@@ -67,7 +67,7 @@
         var s = "";
 
         for(let i = 0; i < 6; i++){
-            let rand = Math.floor(Math.random() * 802)
+            let rand = Math.floor(Math.random() * 802) + 1
             axios.get(`${baseUrl}/pokemon/${rand}`)
             .then((response) => {
                 const pokemon = response.data
@@ -84,6 +84,11 @@
         }
 
         function importTeam() {
+            navigator.clipboard.writeText(s)
+            alert("Copied team to clipboard")
+        }
+
+        function copyTeam() {
             navigator.clipboard.writeText(s)
         }
 
