@@ -24,7 +24,7 @@ p {
     background-color: grey;
     
     width: 60vw;
-    height: 50vh;
+    height: auto;
     opacity: 0.8;
     margin: auto;
     padding: 15px;
