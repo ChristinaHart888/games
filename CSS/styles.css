@@ -1,7 +1,3 @@
-:root{
-    --time_button_color: hsl(#000000, 50%, 50%);
-}
-
 body {
     background-color: pink;
     text-align: center;
@@ -38,21 +34,6 @@ nav > a.current {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 1px 2px 2px black;
     color: white;
-}
-
-.start {
-    border: 2px solid purple;
-    border-radius: 20px;
-    background-color: lightblue;
-    width: 75vw;
-    height: 60vh;
-    text-align: center;
-    margin: auto;
-    display: block;
-    padding: 10;
-    margin-top: 55;
-    box-shadow: 5px 10px 10px;
-    padding: 10px;
 }
 
 .header {

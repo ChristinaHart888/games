@@ -1,11 +1,33 @@
+:root{
+    --time_button_color: hsl(#000000, 50%, 50%);
+}
+
 #num_of_players {
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    background-color: rgb(2,0,36);
-    background-color: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(110,9,121,1) 100%, rgba(0,212,255,1) 100%);
-    
+    background: rgb(2,0,36);
+    background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(110,9,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+.start {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: lightblue;
+    width: 75vw;
+    height: auto;
+    text-align: center;
+    margin: auto;
+    display: block;
+    padding: 10;
+    margin-top: 55;
+    box-shadow: 5px 10px 10px;
+    padding: 10px;
 }
 
 label {
@@ -32,6 +54,7 @@ ul {
     justify-content: space-around;
     display: flex;
     overflow: auto;
+    padding: 10px;
 }
 div#time_limit {
     list-style: none;
@@ -45,11 +68,12 @@ input.time {
 input.time:checked + label {
     transition: 250ms ease-in-out;
     background-color: lime;
+    border: 2px solid lime;
 }
 
 label {
     padding: 5px 15px;
-    border-radius: 100px;
+    
 }
 
 div.time {
@@ -64,8 +88,13 @@ div.time {
     transition: 250ms ease-in-out;
 }
 
+div.time > label {
+    border-radius: 100px;
+    border: 3px solid red;
+}
+
 div.time:hover {
-    background-color: var(--time_button_color);
+    background-color: red;
     color: white;
     transform: translateY(-5px);
 }
