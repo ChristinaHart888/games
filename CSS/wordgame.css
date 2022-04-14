@@ -94,7 +94,10 @@ div.time > label {
 }
 
 div.time:hover {
-    background-color: red;
     color: white;
     transform: translateY(-5px);
+}
+
+div.time > label:hover {
+    background-color: red;
 }
